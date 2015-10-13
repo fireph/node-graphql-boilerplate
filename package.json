@@ -1,0 +1,41 @@
+{
+  "name": "node-graphql-boilerplate",
+  "version": "1.0.0",
+  "description": "GraphQL server with Sequelize and Node.js",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --harmony src/server/index.js",
+    "client": "node src/client/index.js",
+    "test": "NODE_ENV=test mocha --compilers js:babel/register --require co-mocha $(find src -name \"*.spec.js\")",
+    "seed": "node --harmony ./seed"
+  },
+  "author": "DungFu",
+  "license": "MIT",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "babel-core": "^5.8.25",
+    "co": "^4.6.0",
+    "co-body": "^4.0.0",
+    "debug": "^2.2.0",
+    "ect": "^0.5.9",
+    "graphql": "^0.4.7",
+    "graphql-sequelize": "^0.11.1",
+    "koa": "^1.0.0",
+    "koa-qs": "^2.0.0",
+    "koa-router": "^5.2.3",
+    "koa-static": "^1.4.9",
+    "pg": "^4.4.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.11.0",
+    "superagent": "^1.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.0.0",
+    "co-mocha": "^1.1.2",
+    "co-supertest": "0.0.10",
+    "mocha": "^2.2.5",
+    "sinon": "^1.15.4",
+    "sinon-chai": "^2.8.0",
+    "supertest": "^1.0.1"
+  }
+}
